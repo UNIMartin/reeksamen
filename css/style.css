@@ -1,0 +1,332 @@
+@charset "utf-8";
+/* CSS Document */
+
+:root {
+  	--dark-red: rgb(68, 0, 0);
+  	--white: #fff;
+	--black: #000;
+  	--font-family: baskerville; 
+}
+
+/* ---- Global styling ---- */
+html {
+	background-color: var(--dark-red);
+	cursor: pointer;
+}
+
+h1 {
+	color: var(--white);
+	font-family: var(--font-family);
+	font-size: 30px;
+	text-shadow: 2px 2px var(--black);
+}
+
+p {
+	color: var(--white);
+	font-family: var(--font-family);
+	font-size: 18px;
+	text-shadow: 2px 2px var(--black);
+	margin-left: 30px;
+	margin-right: 30px;
+	font-weight: 100;
+}
+
+a {
+	text-decoration: none;
+}
+
+.material-icons.md-48 {
+	font-size: 48px;
+}
+
+
+/* ---- Header styling ---- */
+#video {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+}
+
+
+/* ---- Sections styling ---- */
+.expandable-section {
+	overflow: hidden;
+	position: relative;
+	border-color: var(--white);
+	border-style: solid;
+	border-radius: 20px;
+	margin-bottom: 20px;
+}
+
+.expand-button {
+	position: absolute;
+	width: 100%;
+	height: 80px;
+	color: var(--white);
+	text-shadow: 2px 2px var(--black);
+	background-color: transparent;
+	border: none;
+	font-size: 30px;
+	font-weight: 600;
+	font-family: var(--font-family);
+	
+}
+
+article {
+	margin-top: 70px;
+	overflow: hidden;
+	max-height: 10px;
+	transition: max-height 0.1s ease-in;
+}
+
+article.expanded {
+	max-height: 10000px;
+	overflow-y: hidden;
+	
+}
+
+
+.close-button {
+	display: block;
+	margin: auto;
+	border: none;
+	background-color: transparent;
+	color: var(--white);
+	margin-bottom: 10px;
+}
+.background-image {
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: auto;
+	opacity: 0.3;
+	display: block;
+	margin-top: -30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* ---- SoMe section ---- */
+.SoMe-icons {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+.SoMe-icon {
+	height: 25px;
+	margin: 8px;
+}
+
+
+/* ---- OnlyFans section ---- */
+.onlyfans-links {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+#onlyfans-icon1 {
+	width: 40%;
+	display: block;
+	margin: auto;
+}
+#onlyfans-icon2 {
+	width: 40%;
+	display: block;
+	margin: auto;
+}
+.onlyfans-links p {
+	text-align: center;
+}
+#onlyfans-link1 {
+	width: 50%;
+}
+#onlyfans-link2 {
+	width: 50%;
+}
+
+
+
+/* ---- Audiobooks section ---- */
+.audiobooks-links {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+#patreon-icon {
+	width: 25%;
+	display: block;
+	margin: auto;
+}
+.audiobooks-links p {
+	text-align: center;
+}
+#audiobooks-image {
+	margin-top: -70px;
+}
+
+
+/* ---- Merch section ---- */
+.merch-links {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+#streamlabs-icon {
+	width: 40%;
+	display: block;
+	margin: auto;
+}
+.merch-links p {
+	text-align: center;
+}
+
+
+/* ---- Wishlist section ---- */
+.wishlist-links {
+	display: flex;
+	margin-top: 20px;
+}
+#wishlist-icon1 {
+	width: 40%;
+	display: block;
+	margin: auto;
+}
+#wishlist-icon2 {
+	width: 40%;
+	display: block;
+	margin: auto;
+}
+.wishlist-links p {
+	text-align: center;
+}
+#wishlist-link1 {
+	width: 50%;
+}
+#wishlist-link2 {
+	width: 50%;
+}
+#wishlist-image {
+	margin-top: -10px;
+}
+
+
+/* ---- Donations section ---- */
+.donations-links {
+	display: flex;
+	margin-top: 20px;
+}
+#donations-icon1 {
+	width: 37%;
+	display: block;
+	margin: auto;
+}
+#donations-icon2 {
+	width: 44%;
+	display: block;
+	margin: auto;
+}
+.donations-links p {
+	text-align: center;
+}
+#donations-link1 {
+	width: 50%;
+}
+#donations-link2 {
+	width: 50%;
+}
+#donations-image {
+	margin-top: -80px;
+}
+
+
+
+@media (min-width: 500px) {
+	#video {
+		width: 50%;
+	}
+	h1 {
+		font-size: 40px;
+	}
+	p {
+		font-size: 24px;
+	}
+	.SoMe-icon {
+		height: 45px;
+		margin: 15px;
+	}
+	.expandable-section {
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	article {
+		margin-top: 100px;
+	}
+	
+/* ---- Icons ---- */
+	#onlyfans-icon1 {
+			width: 30%;
+	display: block;
+		margin: auto;
+	}
+	#onlyfans-icon2 {
+		width: 30%;
+		display: block;
+		margin: auto;
+	}
+	#patreon-icon {
+		width: 20%;
+		display: block;
+		margin: auto;
+	}
+	#streamlabs-icon {
+		width: 45%;
+		display: block;
+		margin: auto;
+	}
+	#wishlist-icon1 {
+		width: 25%;
+		display: block;
+		margin: auto;
+	}
+	#wishlist-icon2 {
+		width: 25%;
+		display: block;
+		margin: auto;
+	}
+	#donations-icon1 {
+		width: 25%;
+		display: block;
+		margin: auto;
+	}
+	#donations-icon2 {
+		width: 30%;
+		display: block;
+		margin: auto;
+	}
+	
+/* ---- Background ---- */
+	#onlyfans-image {
+		margin-top: -60px;
+	}
+	#audiobooks-image {
+		margin-top: -150px;
+	}
+	#merch-image {
+		margin-top: -100px;
+	}
+	#wishlist-image {
+		margin-top: -70px;
+	}
+	#donations-image {
+		margin-top:  -150px;
+	}
+	#about-image {
+		margin-top: -200px;
+	}
+}
+
